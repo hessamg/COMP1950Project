@@ -8,3 +8,4 @@ or anyone else's. I simply didn't know her bcit path name.
 
 3.I did the .inc path for the index.html so everyone can see how they can use it as a sample. you have to use wamp to be able to see it though
 
+4.TRY to include only one css file unless its necessary.  if not just import it from in the css.

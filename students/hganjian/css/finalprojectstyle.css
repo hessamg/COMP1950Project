@@ -1,3 +1,5 @@
+@import url("/students/hganjian/css/normalize.css");
+@import url("/students/hganjian/navigation/menu.css");
 header{
 	position:fixed;
 	top:0px;
