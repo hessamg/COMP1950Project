@@ -153,7 +153,7 @@
         <div class="col_1">
           <ul>
             <li>
-              <a href="quizzes/quiz1.html">Quiz 1</a>
+              <a href="/students/hganjian/pages/quizzes/quiz1.html">Quiz 1</a>
             </li>
             <li>
               <a href="quizzes/quiz2.html">Quiz 2</a>
