@@ -1,0 +1,10 @@
+** please use server root based paths **
+
+1.I changed the roots to /students/hganjian/... cause I thought its better if we all use server root based paths. 
+since only one of us has to upload the final project on their page I used the hganjian(my own page). its ok if you want to change to Didi's 
+or anyone else's. I simply didn't know her bcit path name.
+
+2.I checked the excersize page and found there are 2 css paths that this page is using that do not exist.
+
+3.I did the .inc path for the index.html so everyone can see how they can use it as a sample. you have to use wamp to be able to see it though
+
