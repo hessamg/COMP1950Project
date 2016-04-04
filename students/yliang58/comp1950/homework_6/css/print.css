@@ -1,0 +1,34 @@
+/* This is a css sheet for printing homework_5 */
+
+body{font-family:arial;
+     margin:0px;
+     font-size:18px;}
+
+
+h1 h2 h3 {font-family:"times new roman";}
+
+
+footer{border-top:1px solid black;
+       text-align:center;}
+
+
+
+#widescreen,#thin,nav ul,section>img{display:none;}    
+
+section{font-size:1em;}          
+aside{
+      position:relative;
+      top:0px;
+      left:10px;
+      width:auto;
+      padding:10px;
+      margin-right:20px;
+      margin-bottom:20px;
+      page-break-before:always;
+      font-size:0.9em;}   
+      
+ a{font-size:0.9em;}     
+      
+a[href^="http://"]:link:after, 
+a[href^="http://"]:visited:after{
+   content: " (URL: " attr(href) ") ";} 

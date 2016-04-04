@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Exercise</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="form_styles.css" />
+	</head>
+	<body>
+		<h1>Form Exercise</h1>
+		<fieldset>
+			<legend>User Information</legend>
+
+			<form action="formmail.php" method="post">
+
+				First Name
+				<input	type="text"
+							id="firstname"
+							name="firstname"/>
+
+				Last Name
+				<input	type="text"
+							id="lastname"
+							name="lastname"/>
+
+					<label for="email">Email 'From' Address</label>
+				<input 	type="text" 
+						name="email"
+						id="email"
+						value="yla249@sfu.ca"	/>
+
+				<label for="remember">Remember Me</label>
+				<input	type="checkbox"
+							checked="checked"
+							id="remember"
+							name="remember"/>			
+							
+				<input  type="submit" 
+							value="Submit"
+							class="submit_button" />
+           		
+						
+						<input type="hidden" name="recipient" value="yla249@sfu.ca" />
+			</form>
+		</fieldset>
+
+		<fieldset>
+			<legend>Challenges:</legend>
+			<ul>
+				<li>apply <code>&lt;label&gt;</code>s to all form inputs. use the <code>for=""</code> attribute to assign each label to an input <code>id</code></li>
+				<li>add a <code>checkbox</code> for a "Remember Me" option. include a <code>label</code> for this new input.</li>
+				<li>precheck the the checkbox using <code>checked="checked"</code></li>
+				<li>note how the size of the checkbox is, like other <code>input</code>s, set at 100% width. resize it back to its normal size by assigning <code>width:auto;</code> to the checkbox</li>
+				<li>optional exercise challenge: use <code>formmail.php</code> to send all submitted form data to a specified email address
+				<ul>
+					<li>examine the commented instructions at the top of <code>formmail.php</code></li>
+					<li>update this HTML page and <code>formmail.php</code> according to these instructions</li>
+					<li>update the form <code>action</code> attribute, so that this form sends the data to <code>formmail.php</code></li>
+					<li>upload all relevant files to your webspace and test your form online</li>
+				</ul>
+					 
+					</li>
+			</ul>
+	</body>
+</html>

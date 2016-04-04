@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <title>sliding background Image Menu</title>
+		<meta charset="UTF-8" />
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sbimenu.css" />
+
+	
+
+    </head>
+    <body>
+		<div class="container">
+			<div class="header">
+				<h1>Didi Liang</h1>
+				<h2>#</h2>
+			</div>
+			<div class="content">
+				<div id="sbi_container" class="sbi_container">
+					<div class="sbi_panel" data-bg="images/1.jpg">
+						<a href="#" class="sbi_label">About</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Homework 1</a></li>
+								<li><a href="#">Previous works</a></li>
+							
+							</ul>
+						</div>
+					</div>
+					<div class="sbi_panel" data-bg="images/2.jpg">
+						<a href="#" class="sbi_label">Homeworks</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Subitem</a></li>
+								<li><a href="#">Subitem</a></li>
+								<li><a href="#">Subitem</a></li>
+								<li><a href="#">Subitem</a></li>
+								<li><a href="#">Subitem</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sbi_panel" data-bg="images/3.jpg">
+						<a href="#" class="sbi_label">Contact</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Subitem</a></li>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="topbar">
+				<a href="#"><span>&laquo; Previous page </span>Grid Navigation Effects</a>
+				<span class="right_ab">
+					<a href="#">Photos by Eddie's</a>
+					<a href="#"><strong>back to the Home</strong></a>
+				</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.bgImageMenu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#sbi_container').bgImageMenu({
+					defaultBg	: 'images/default.jpg',
+					border		: 1,
+					type		: {
+						mode		: 'seqHorizontalSlide',
+						speed		: 250,
+						easing		: 'jswing',
+						seqfactor	: 100
+					}
+				});
+			});
+		</script>
+    </body>
+</html>

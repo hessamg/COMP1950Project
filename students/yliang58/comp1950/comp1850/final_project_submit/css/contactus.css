@@ -1,0 +1,48 @@
+/* this is a stylesheet for contact us */
+
+
+
+#title{
+	position:relative;
+	text-align:center;
+	font-size:40px;
+	font-family: sans-serif;
+    margin:40px 0 20px 0;
+    color:#2A0E39;
+    }
+
+
+
+label{font-size:14px;
+color:#2A0E39;
+padding:5px;
+display: inline-block;
+    float: left;
+  
+}
+input{ outline:none;
+display:block;
+width:380px;
+padding:4px 8px;
+border:1px dashed #DBDBDB;
+color:#3F3F3F;
+font-family:'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+font-size:14px;
+border-radius:2px;
+transition:background 0.2s linear,
+box-shadow 0.6s linear;}
+
+
+
+.form_content{position:relative;
+         margin:80px 200px 200px 250px;
+         width:400px;
+        height:auto;
+         padding:30px;
+          border:1px solid #383838; 
+          background-color:#D1D1D1;
+          background: repeating-linear-gradient(-45deg, #9775AA , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px);
+border-radius:8px;  
+          box-shadow:0px 1px 6px #3F3F3F;
+          }
+

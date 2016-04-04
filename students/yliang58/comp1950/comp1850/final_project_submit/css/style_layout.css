@@ -1,0 +1,157 @@
+/* the stylesheet for the main layout */
+
+
+
+/* Dropdown Button */
+
+    
+
+.content{
+         position:relative;
+margin:70px 0px 80px 240px;}
+
+.content_text{text-align:justify;
+              width:500px;
+              line-height:30px;}
+
+/* id rules */
+
+
+#container{
+           min-width:700px;
+           height:auto;
+           background-color:white;}
+
+#logo{position:absolute;
+       top:0px;
+       left:20px;}
+      
+#texture_text{
+               width:800px;}
+
+#story{margin: 0 25px 10px 0;
+       float:right;
+     }
+
+
+#owl-demo .item img{
+
+    display: block;
+    width: 50%;
+    height: 40%;
+}
+
+
+/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+
+
+
+.drop_menu {
+	background:#3D3A3F;
+	padding:0 0 0 90px;
+	margin-top:114px;
+	margin-left:200px;
+	margin-right:20px;
+	list-style-type:none;
+	height:35px;
+	
+}
+.drop_menu li { float:left;
+                margin-right:40px;}
+.drop_menu li a {
+	padding:9px 20px;
+	display:block;
+	color:white;
+	text-decoration:none;
+	font:16px arial, verdana, sans-serif;
+
+
+}
+
+/* Submenu */
+.drop_menu ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	list-style-type:none;
+}
+.drop_menu li:hover { position:relative; background:#47274e; }
+.drop_menu li:hover ul {
+	left:0px;
+	top:30px;
+	background:#47274e;
+	padding:0px;
+}
+
+.drop_menu li:hover ul li a {
+	padding:9px;
+	display:block;
+	width:168px;
+	text-indent:15px;
+	background-color:#47274e;
+}
+.drop_menu li:hover ul li a:hover { background:#482F56; }
+
+
+
+/* links in text */
+
+.item_link{ font-style:italic;
+            text-decoration:none;
+             color: #999;}
+
+.item_link:hover{background-color:#47274e;
+                text-decoration:underline;}
+
+
+
+
+/* Site map footer */
+body {
+  background:white;
+  color: #999;
+  font-family: sans-serif;
+}
+footer ul {
+  list-style: none;
+  display: block;
+  float: left;
+}
+footer h3 {
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+footer li{padding:5px 0 5px 0;}
+
+.grey{color: #24063F;}
+.pink{color: #B9A6C9;}
+.red{color: #8E73A6;}
+.orange{color: #522E72;}
+.green{color: #381656;}
+
+footer a{color:#999;
+         text-decoration:none;}
+         
+footer a:active{color:#999;
+         text-decoration:none;}
+
+footer a:link{color:#999;
+         text-decoration:none;}         
+
+footer a:hover{text-decoration:underline;}
+#copyright{
+           display:block;
+            float:right;
+            margin-right:80px;
+            margin-top:100px; }
+            
+            
+/* table*/
+table{margin-top:40px;
+      margin-bottom:60px;
+      padding:5px;
+      border:2px dashed #999;}  
+th{color:black;}          
+  td{ 
+      padding:10px;}          

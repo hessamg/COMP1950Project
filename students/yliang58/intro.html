@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html>
+
+<!--
+Author:Didi Liang
+Date:4/2/2016
+Notes:This is the intro page for COMP1950 Group Project
+ -->
+ 
+ <head>
+ 	<meta charset="utf-8">
+ 	 <title>Intro_COMP1950 Group Project</title>
+ 	 <meta name="description" content="This is the intro page
+ 	 for COMP1950 Group Project, created by Annie, Didi, Sam and Selene.">
+ 	
+ 	<link rel="stylesheet" href="css/stylesheet.css">
+
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<!-- JQuery Plugins-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = $(this).attr('href');
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+
+
+});
+
+
+</script>
+<!-- Jquery plugin ends from here-->
+
+ </head>
+ 
+
+
+<body>
+<div id="container">
+
+	
+    <h1>Welcome to COMP1950</h1> 
+    <div id="prompt"><p>Click on the log-in button to enter our Pro-site</p>
+    </div>
+    
+        	<div class="btn-sign">
+        	
+				<a href="#login-box" class="login-window">Login</a>
+        	</div>
+
+        
+        <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+          <form method="post" class="signin" action="#">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span>BCIT ID</span>
+                <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Student Number">
+                </label>
+                
+                <label class="password">
+                <span>Password</span>
+                <input id="password" name="password" value="" type="password" placeholder="Password">
+                </label>
+                
+                <!--need to be fixed!! -->
+                <button class="submit button" type="button"><a href="resources/resources.html">Log in</a></button>
+                <!--need to be fixed!! -->
+                <p>
+                <a class="forgot" href="#">Forgot your password?</a>
+                </p>
+                </fieldset>
+          </form>
+		</div>
+       
+         <section>
+         <h3>The Group Project:Redesign the COMP1950 Webpage</h3>
+         <nav>
+         <ul>
+         <li><a href="#">Intro</a></li>
+         <li><a href="#">Proto-site</a> </li>
+         <li><a href="#">Sitemap</a></li>
+         <li><a href="#">Rationale</a></li>
+         </ul>
+         </nav>
+         <p>Group Members:Annie, Didi, Sam and Selene</p>
+         <ul>
+         <li>Didi – main liason communicator, taking care of the final GitHub – resources – introduction page </li>
+<li>Selene –  exercises – examples – lectures (comp1950)</li>
+<li>Sam – quizzes page (comp1950) – rationale page (final project)</li>
+<li>Annie – navigation design(comp 1950) – sitemap(final project) – home page(comp1950)</li>
+We finish the rationale page together.
+         </ul>
+         </section>
+        
+        
+        
+
+ 
+    
+    
+    <!--Container:all contents ends from here -->
+    </div>
+ 		</body>
+ 
+ </html>

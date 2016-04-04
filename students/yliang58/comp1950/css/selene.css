@@ -1,0 +1,106 @@
+/* This is a stylesheet for Didi Liang's website for COMP 1950 created by Selene Dublanko*/
+/* author: Selene Dublanko
+	date: March 2016*/
+	
+/* html selectors*/
+
+body {
+	background-color: white;
+	color: white;
+	font-family: calibri, sans-serif;
+}
+h2{
+	font-family: Book antiqua, serif;
+}
+
+a[href$=".com/"]{
+	font-weight:bold;
+}
+ul  li {
+	color:brown;
+}
+li:nth-child(odd){
+	background-color:#ddf9a5;
+}
+li a{
+	text-decoration: underline;
+}
+
+
+a:link{
+	color:brown;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:#90dada;
+}
+a:visited{
+	color:#90dada;
+	text-decoration:none;
+}
+
+
+/*class selectors*/
+.drop_menu{
+		   }
+
+.drop_menu li { 
+		
+			background-color: transparent;
+			
+             list-style-type:none;
+             font-family: calibri, sans-serif;
+	         font-size:18px;
+			
+             }
+.drop_menu li a {
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	font-size:18px;
+	
+	
+	}
+	
+	
+.drop_menu li a:hover{
+                      text-decoration:underline;}	
+                      
+/* style for text */                      
+.content{
+	     margin:10px 50px 0px 50px;
+	     
+	     }
+
+.keyword{color:#FF6868;
+         font-weight:bold;}
+
+.picture{float:left;
+         margin:0px;
+         padding:20px;
+      }    
+/*id selectors*/
+#container{
+	background-color: pink;
+	max-width:900px;
+	padding: 10px;
+	margin-right:auto;
+	margin-left:auto;
+	
+}
+
+#navigation{
+	background-color: #ddf9a5;
+	
+}
+
+#logo{
+	text-align: center;
+}
+
+#footer{
+	background-color: brown;
+	text-align: center;
+	padding: 5px;
+}

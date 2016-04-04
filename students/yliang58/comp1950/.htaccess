@@ -1,0 +1,10 @@
+#this is the file for homework_7
+
+AddType text/html .shtml .html
+AddHandler server-parsed .shtml .html
+Options Indexes FollowSymLinks Includes 
+
+
+
+
+ErrorDocument 404 /students/yliang58/errors/page_cannot_find.html

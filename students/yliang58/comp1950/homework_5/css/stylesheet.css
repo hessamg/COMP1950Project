@@ -1,0 +1,291 @@
+/* this is a stylesheet for homework_5 
+
+author:didi liang
+date:11/3/2016
+
+*/
+
+
+
+
+/* ＊＊＊＊＊＊＊＊ css reset ＊＊＊＊＊＊＊＊＊＊＊*/
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family:"times new roman";
+	margin:15px;
+}
+
+a {
+  background-color: transparent;
+}
+
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* *************  
+	html selectors
+
+********************  */
+
+body{
+     font-size:20px;
+     font-family:"Times New Rome", helvetica, sans-serif;
+    }
+
+
+h1 h2 h3{margin:12px 20px;}
+#widescreen, #thin {color:#7B7B7F;
+                    margin-left:20px;}
+                    
+                    
+
+/* navigation  */
+nav{ 
+     margin:0px;
+     }
+     
+nav ul{ 	
+   width:800px;
+   list-style-type:none;
+	margin-top:0px;
+	padding-top:5px;
+	padding-left:0;
+	margin-left: 0;
+        float:left;
+        background-color:#FF4D83;
+        } 
+
+nav ul li{
+          display:inline;
+          }  
+
+
+
+nav ul li a{
+       float:left;
+       text-decoration:none;
+       text-shadow: 2px 2px 5px pink;
+       color:white;
+       padding:0px 10px;
+         }
+
+nav ul li a:visited{color:white;
+                   }
+
+nav ul li a:hover{text-decoration:underline;
+             color:white;
+             }
+
+
+                    
+                    
+/* section */
+
+section{margin:auto;}                                    
+
+section p{ padding:12px 120px 12px 10px;
+           text-align:justify;
+           line-height:30px;}
+         
+section>img{padding:10px 20px 10px 10px;
+            max-width:100%;
+            height:auto;}         
+
+
+section a{text-decoration:underline;
+              color:black;
+             font-size:0.8em;}      
+   
+section a:visited{color:black;}	   
+ 
+section a:hover{color:grey;
+                 }	 
+
+
+
+/* aside:the content about applied css techniques  */            
+
+
+
+aside{border-radius:10px;
+      box-shadow:10px 10px grey;
+      position:absolute;
+      top:200px;
+      right:20px;
+      width:200px;
+      height:auto;
+      border:1px dashed black;
+      background-color:#D2B0BB;
+      font-size:0.7em;
+      padding:8px;
+    background:radial-gradient(#AC5685,#ffffff); 
+    line-height:20px; 
+      
+      }
+ 
+
+aside h3{font-size:1em;} 
+ 
+aside a{text-decoration:underline;
+              color:black;
+           
+             }
+
+
+   
+aside a:visited{color:black;}	   
+ 
+aside a:hover{color:grey;
+                 }	 
+
+             
+footer{
+    background-color:#AA5585;
+	color:#ffe47c;
+	padding:10px;
+    font-size:0.8em;
+    }
+/* class selectors */
+
+
+.text{
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+    text-overflow:ellipsis;}
+
+.text:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+
+
+
+/*
+id selectors 
+*/
+
+#container{
+width:800px;
+height:auto;
+margin:auto;
+position:relative;
+}
+
+#current_page{background-color:#D2B0BB;
+              color:white;
+              }                    
+
+
+/* 2 - media query rules for thin clients
+*/
+
+@media only screen and (min-width:10px) and (max-width:750px){
+
+ #widescreen{display:none;}
+ #thin{display:block;}
+
+
+	#container, header, nav ul, section, aside, footer{
+		width:auto;
+		font-size:.90em;
+	}
+
+
+
+    h1{font-size:1.3em;
+    }
+    h2{font-size:1.1em;
+    }
+    h3{font-size:0.9em;
+       }
+    
+    section p{font-size:0.8em;
+              margin:auto;
+              padding-right:20px;}
+             
+             
+
+   nav{overflow:hidden;}
+
+   	nav ul{ width:100%;}
+
+	nav ul li a	{
+		width:100%;
+		display:block;
+		padding-left:100px;
+		   font-size:0.9em;}
+     
+     aside{position:relative;
+           top:0px;
+     		left:10px;
+     		font-size:0.7em;
+     		margin-bottom:20px;
+     		margin-right:20px;}
+     
+
+
+
+     footer{font-size:0.7em;
+            text-align:center;}
+
+
+} 
+
+   
+    
+
+
+/* 3 - media query rules for widescreen clients
+*/
+@media only screen and (min-width:751px)and (max-width:1600px){
+
+ 	#widescreen{display:block;}
+ 	#thin{display:none;}
+    h1{font-size:1.7em;}
+    h2{font-size:1.3em;}
+    h3{font-size:1em;
+        }
+   section p{font-size:0.9em;
+             }
+    aside{font-size:0.8em;}
+
+
+   footer{
+   
+          font-size:0.8em;    
+          text-align:center;}
+
+} 
