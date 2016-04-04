@@ -7,7 +7,7 @@ body, ul, li {
 
 #menu {
 	position:fixed;
-	top:45px;
+	top:43px;
 	left:0px;
 	z-index:9999;
 	list-style:none;

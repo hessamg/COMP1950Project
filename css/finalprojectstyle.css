@@ -7,6 +7,30 @@ header{
 	color:#FFFFFF;
 	padding:10px;}
 
+main{
+	position:absolute;
+	top:130px;
+	left:50px;
+	}
+	
+section{
+	width:800px;
+	}
+
+aside{
+	background-color:#B6A754;
+	color:#000000;
+	padding-left:20px;
+	border: 1px solid #000000;
+	}
+
 h2{
 	font-family: verdana;
 	}
+	
+body, ul, li {
+	font-size:14px; 
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:21px;
+	text-align:left;
+}
